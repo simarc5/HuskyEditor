@@ -1,0 +1,90 @@
+<header class="jumbotron" xmlns="http://www.w3.org/1999/html">
+<!--  create a big title -->
+  <div id="header" class="container">
+    <h1><img src="https://neuidmsso.neu.edu/idp/images/global-logo.png" width="100px" height="100px">HuskyEditor</h1>
+
+  </div>
+</header>
+
+
+
+<div class="container">
+  <div class="row">
+<!--    create btn to add your picture-->
+    <div class="col-sm-4">
+
+      <p>
+        <input #userPhoto id="img_input2" type="file" accept="image/*" (change)="fileChangeEvent($event)" />
+        <label for="img_input2" class="img_label2 enlarge"><span class="glyphicon glyphicon-open"></span><span>Add Your
+          Picture</span>
+        </label>
+      </p>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active">
+          <p class="jumbotron enlarge">
+          <input #userPhoto id="img_input2" type="file" accept="image/*" (change)="fileChangeEvent($event)" />
+          <label for="img_input2" class="img_label2"><span class="glyphicon glyphicon-open"></span><span> Add Your Picture</span>
+          </label>
+        </p>
+        </li>
+
+      </ul>
+      <hr class="hidden-sm hidden-md hidden-lg">
+    </div>
+
+
+<!--    show the picture that pre-saved-->
+    <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+      <p class="col-md-2 col-sm-6" >
+
+<!--  Thumbnail Images -->
+      <p class="thumbnail"><img
+      (click)="preview($event)"
+      src="https://res.cloudinary.com/highereducation/image/upload/c_scale,h_416,w_740/v1543441985/TheBestSchools.org/northeastern-university-MA.jpg"
+      [ngStyle]="{ width: width + 'px', height: height + 'px' }"></p>
+
+
+        <p class="thumbnail">
+            <img
+              (click)="preview($event)"
+              src="https://microgridknowledge.com/wp-content/uploads/2019/05/Northeastern-fall-1024x680.jpg"
+              [ngStyle]="{ width: width + 'px', height: height + 'px' }"
+            >
+        </p>
+
+
+        <p class="thumbnail">
+          <img
+            (click)="preview($event)"
+            src="https://www.northeastern.edu/offcampus/wp-content/uploads/2019/05/aerial-campus-shot_matthew-modoono_april-2019.jpg"
+            [ngStyle]="{ width: width + 'px', height: height + 'px' }"
+          />
+
+      </p>
+
+
+      <div class="thumbnail">
+        <img
+          (click)="preview($event)"
+          src="http://d279m997dpfwgl.cloudfront.net/wp/2017/01/0102_northeastern-university-veterans-1000x714.jpg"
+          [ngStyle]="{ width: width + 'px', height: height + 'px' }"
+        />
+
+    </div>
+
+    <div class="thumbnail">
+      <img
+        (click)="preview($event)"
+        src="https://res.cloudinary.com/highereducation/image/upload/c_scale,h_416,w_740/v1543441985/TheBestSchools.org/northeastern-university-MA.jpg"
+        [ngStyle]="{ width: width + 'px', height: height + 'px' }"
+      />
+
+  </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Thanks for using . Submitted By : Sida Chen, Zilli Liao, Simarjeet, Kaoyan Ye</p>
+</div>

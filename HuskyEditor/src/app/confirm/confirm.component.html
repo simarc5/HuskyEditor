@@ -1,0 +1,60 @@
+<!--Page for you to send a Email-->
+
+<header class="jumbotron">
+  <div id="header" class="container">
+
+    <strong><span class="glyphicon glyphicon-envelope"></span> You Can Send Your Edit To Your Friends!</strong>
+    <div class="row">
+      <div class="col-xs-12">
+        Title <input type="text" [(ngModel)]="mails.title" placeholder="Title" />
+        To <input type="text" [(ngModel)]="mails.To" placeholder="To" />
+
+        <button id="send" (click)="send()">
+          <span class="glyphicon glyphicon-send"></span> Click To Send
+        </button>
+
+      </div>
+
+
+    <!-- For saving it to the computer -->
+
+    <div id="next" class="col-xs-12">
+      <br>
+      <strong>You can:</strong>
+      <button id="save" (click)="download()">
+        <span class="glyphicon glyphicon-cloud-download"></span> Save To My Computer
+      </button>
+    </div>
+  </div>
+  </div>
+
+</header>
+
+<!-- Container For editing and going back to home page -->
+
+<div class="container">
+  <div class="row justify-content-between">
+    <div class="col-xs-4 text-left"> <button (click)="backToSelect()">
+        <span class="glyphicon glyphicon-triangle-left"></span> Edit a new image
+      </button></div>
+    <div class="col-xs-4"></div>
+    <div class="col-xs-4 text-right">
+      <button (click)="backToEdit()">
+        <span class="glyphicon glyphicon-triangle-left"></span> Back To Edit
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Thumbnail container in which there is image -->
+
+<div class="container">
+  <div class="row">
+    <div class="thumbnail">
+
+      <img class="img-responsive" [src]="canvasImg">
+
+    </div>
+  </div>
+</div>

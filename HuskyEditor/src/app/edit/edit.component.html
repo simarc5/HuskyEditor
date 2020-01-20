@@ -1,0 +1,61 @@
+<!--Edit page which the function show in the left side-->
+
+<div class="sidenav">
+
+  <div class="c1">
+    <a  routerLink="/pool">  <span class="glyphicon glyphicon-camera"></span></a>
+<br>
+<br>
+<!--    set photo from not editing to editable-->
+    <a routerLink="/edit" (click) = "confirm()">Edit</a>
+
+    <br>
+
+<!--    Add the author name into the picture-->
+    <span class=" glyphicon glyphicon-pencil"> </span>
+    <span class="a123">Add Text</span>
+
+
+    <input type="text" [(ngModel)]="text">
+    <br>
+    <br>
+
+
+
+
+
+
+<!-- confirm your edit and switch to the next part which can send a Email-->
+    <button type="button" class="btn btn-success">
+      <a (click)="goToConfirm()">
+        Confirm</a>
+
+    </button>
+
+    <br>
+    <br>
+
+
+
+<!--remove your edit and switch you page back to the pool page-->
+    <button type="button" class="btn btn-danger">
+      <a  (click)="moveToPool()">
+        Remove</a>
+    </button>
+
+</div>
+  </div>
+
+
+
+<!-- Main div container for image , where image is displayed -->
+
+<div class="img">
+  <mat-slider [(ngModel)]="sliderValue" (change)="onChange()"></mat-slider>
+  <angular-cropper #angularCropper [cropperOptions]="config" [imageUrl]="imageUrl"></angular-cropper>
+  <div *ngIf="croppedImage"><img class="croppedImage" [src]="croppedImage"></div>
+  <img class="newImg" [ngStyle]="{'diplay': none}">
+  <canvas #myCanvas></canvas>
+
+</div>
+

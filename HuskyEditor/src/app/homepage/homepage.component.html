@@ -1,0 +1,35 @@
+<!-- we create a slide which can move between 3 pictures-->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+  <!-- （Carousel）pointer -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+<!--  the 3 pictures in the slide-->
+  <div class="carousel-inner ">
+    <div class="item active ">
+      <img src="https://img.zcool.cn/community/01c85d57b68a0c0000012e7eb02e73.jpg@1280w_1l_0o_100sh.jpg"
+        alt="First slide"   >
+    </div>
+    <div class="item ">
+      <img src="http://app.boost.org.cn//uploads/06902f0d-c73d-432e-8c41-659c0b5473ec.jpg"
+        alt="Second slide">
+    </div>
+    <div class="item ">
+      <img src="https://i.ytimg.com/vi/q0Fn9Bsryc8/maxresdefault.jpg"
+        alt="Third slide">
+    </div>
+
+    <app-login class="position">Login</app-login>
+
+<!-- a gradient ramp area which you can use to switch the slide-->
+  </div>
+  <!-- （Carousel）navigation -->
+  <a class="carousel-control left " href="#myCarousel" data-slide="prev"></a>
+  <a class="carousel-control right " href="#myCarousel" data-slide="next"></a>
+
+</div>
+
+

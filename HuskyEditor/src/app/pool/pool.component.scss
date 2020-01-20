@@ -1,0 +1,54 @@
+
+%addImage {
+  width: 200px;
+  float: left;
+  text-align: center;
+  color: #ffffff;
+}
+
+#img_input2 {
+  display: none;
+  @extend %addImage;
+}
+
+.img_label2 {
+  float: left;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 8px;
+  margin-top :-20px;
+  margin-left: 15px;
+}
+
+.jumbotron {
+  background-color: black;
+  color: #ffffff;
+}
+
+.glyphicon {
+  color: #ffffff;
+}
+
+span {
+  color: #ffffff
+}
+
+strong {
+  background-color: #ffffff;
+  font-size: 30px;
+  color: #695251;
+}
+
+.enlarge{
+  font-size: 20px;
+}
+
+.thumbnail{
+  display: inline;
+
+}
+
+
+

@@ -1,0 +1,40 @@
+.carousel-inner {
+  position: relative
+}
+
+
+app-login {
+
+  background-color: rgba($color: #856f6e, $alpha: 0.5);
+  border: #ffffff solid 3px;
+  text-align: center;
+  // line-height: 100%;
+  position: absolute;
+  opacity: 5;
+}
+
+.word {
+  padding: 18%;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: Calibri;
+}
+
+.title{
+  font-size: 40px
+}
+
+.btn{
+  font-size: 20px;
+}
+
+.position{
+
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  left: 20%;
+
+  padding-right: 100px;
+}
+
