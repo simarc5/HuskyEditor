@@ -1,6 +1,5 @@
 # HuskyEditor
-HuskyNote created by GitHub Classroom
-## Background and Proposal:
+
 Background:
 
 With the popularity of card digital cameras, digital photos have become more and more media for ordinary families to store memories. However, due to various reasons during digital photo shooting, the expressiveness of photos is insufficient, and digital photos need to be repaired.
